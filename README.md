@@ -1,7 +1,6 @@
-# Kraft_Heinz_Challenge
-Projeto do Challenge Heinz - Fiap
+# Kraft_Heinz_Challenge - Fiap
 
-####Criar um sistema para monitoramento da gestão ambiental da empresa por linha de produto (utilização de recursos sustentáveis, economia de energia e água, abastecimento responsável e apoio comunitário).
+#### Criar um sistema para monitoramento da gestão ambiental da empresa por linha de produto (utilização de recursos sustentáveis, economia de energia e água, abastecimento responsável e apoio comunitário).
 
 >1) Modelagem de dados (Modelo Lógico do sistema de monitoramento – MER em pdf).
 
