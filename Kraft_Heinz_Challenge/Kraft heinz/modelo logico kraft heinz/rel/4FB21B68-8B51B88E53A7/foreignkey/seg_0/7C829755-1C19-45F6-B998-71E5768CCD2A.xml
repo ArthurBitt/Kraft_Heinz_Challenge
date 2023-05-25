@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7C829755-1C19-45F6-B998-71E5768CCD2A" containerWithKeyObject="48B508F9-8B82-6CCE-FF21-A99C185938CF" localFKIndex="4098EEE9-9D52-6C20-AA37-8913CC720CEA" name="T_SMCEA_CONVERTE_T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>C43D4D07-9CBF-8313-BB98-F30CA402DFE1</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<referredTableLongName>T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2CD5CC07-21FA-3E7D-1A9F-FA24324825A6</referredTableID>
+<keyObject>C449FF7C-994F-9FE1-037B-056CE4C642E2</keyObject>
+<referredKeyID>C449FF7C-994F-9FE1-037B-056CE4C642E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_energia_renvovavel</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
