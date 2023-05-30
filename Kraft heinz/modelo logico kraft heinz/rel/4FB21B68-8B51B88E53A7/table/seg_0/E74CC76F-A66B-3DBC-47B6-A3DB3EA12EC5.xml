@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E74CC76F-A66B-3DBC-47B6-A3DB3EA12EC5" name="T_SMCEA_CONSUMO_AGUA">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>A8A9848C-A8B5-10DB-62FF-41B310D2BDAB</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_SMCEA_FABRICA_id_fabrica" id="E67B57CD-8468-739D-5785-6D48F30D206D">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>2E0AC19B-BE68-0C4A-093B-8B0558363173</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22375AE9-87EA-880B-A5AE-4059C5B057E7" referredColumn="3165D0C2-C099-A19C-C54F-BE4237CD6C29"/>
+</associations>
+</Column>
+<Column name="vl_agua_gasta" id="5D74C211-F67C-63FB-437E-FE61D3243DF4">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>6FC6B4DB-2BFF-DE85-0127-EB307F43C836</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_SMCEA_CONSUMO_AGUA_ID" id="27025BD5-9848-8F73-7344-5ACDEFD0B46D">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB33DD52-74A6-3978-ABA6-809E90C37633" name="T_SMCEA_CONSUMO_AGUA_PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="27025BD5-9848-8F73-7344-5ACDEFD0B46D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4D82E61-613A-E555-B9B1-B080E4CF167B" name="T_SMCEA_CONSUMO_AGUA__IDX">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9B8E71A2-ECE9-D81B-0DA3-EB36C0158953</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E67B57CD-8468-739D-5785-6D48F30D206D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F95ECBB-1D0E-628F-6A59-D3ACA7424FDE" name="T_SMCEA_CONSUMO_AGUA_T_SMCEA_FABRICA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>9B8E71A2-ECE9-D81B-0DA3-EB36C0158953</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E67B57CD-8468-739D-5785-6D48F30D206D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

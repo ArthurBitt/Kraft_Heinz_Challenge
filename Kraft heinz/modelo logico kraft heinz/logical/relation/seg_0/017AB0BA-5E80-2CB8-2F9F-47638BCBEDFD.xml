@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="017AB0BA-5E80-2CB8-2F9F-47638BCBEDFD">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:50:27 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<sourcePk>A2DD714A-EE3B-C52A-24DE-BBEDD439E600</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>85CC2E5B-12D9-F07E-EFD9-2E0FE7460CFA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3207107E-081F-B8BE-B900-BADC1CD2337F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

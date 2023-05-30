@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F0D40E3-3C37-0FC2-EB60-196571EC8882" name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>3207107E-081F-B8BE-B900-BADC1CD2337F</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_resultado" id="3E0D0C38-8D69-ED54-6CD3-428F06255B2A">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>937513CD-98E3-E109-0101-C7123D310056</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_SMCEA_CONVERTE_T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS_id_energia_renvovavel" id="AB6119C1-A059-2AAC-5601-C92362073164">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>9B11C1B1-570D-C792-23EB-37D12A0302C4</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97D43E99-A295-4C26-FB09-960ACB06419E" referredColumn="2CD1E75C-BF68-4C22-C9F1-459259367B76"/>
+</associations>
+</Column>
+<Column name="T_SMCEA_FABRICA_id_fabrica" id="AC1D6A3D-654E-ED5D-590E-8F8502B3AF50">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>23DFCCE7-5B99-E6D9-C95B-9F9DF2A6EA3D</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0234502-BEA7-4CE0-38B6-D40C960A6272" referredColumn="3165D0C2-C099-A19C-C54F-BE4237CD6C29"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC520694-ABA1-92E3-C77D-450D6796CA6E" name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>CA87DFC8-427C-A0BF-C0C9-9D67D2F5A5E3</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E0D0C38-8D69-ED54-6CD3-428F06255B2A"/>
+<colUsage columnID="AB6119C1-A059-2AAC-5601-C92362073164"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCC09FF8-D8A3-20F2-4F85-BC9305DC1D9C" name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA__IDX">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5FF1F204-E4F9-3383-3F47-859354BD803C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AC1D6A3D-654E-ED5D-590E-8F8502B3AF50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A8329DB-AC6A-23BE-0AF4-965D3869C5EB" name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_CONVERTE_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>017AB0BA-5E80-2CB8-2F9F-47638BCBEDFD</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB6119C1-A059-2AAC-5601-C92362073164"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EC6B211-71EC-9587-7D3A-EA91CA95459B" name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_FABRICA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>5FF1F204-E4F9-3383-3F47-859354BD803C</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC1D6A3D-654E-ED5D-590E-8F8502B3AF50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

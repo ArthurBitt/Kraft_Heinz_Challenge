@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6641E44F-1BF7-C4A1-12AC-D3C2A0D38B59" containerWithKeyObject="7CD5FD32-0537-BA9D-311F-C81E1DFD115E" localFKIndex="263EFFEC-76FD-985E-1639-170FE8D884A4" name="T_SMCEA_TIPOS_PRODUTOS_T_SMCEA_MAQUINAS_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>53CCF1C3-EEBD-AFB5-1171-2B37E2FD2283</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<referredTableLongName>T_SMCEA_MAQUINAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04EBDB49-89CE-93B4-8386-E477855D0AC3</referredTableID>
+<keyObject>71B1B9BA-2837-BEAD-A588-9FDE3DA480DD</keyObject>
+<referredKeyID>71B1B9BA-2837-BEAD-A588-9FDE3DA480DD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_maquina</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
