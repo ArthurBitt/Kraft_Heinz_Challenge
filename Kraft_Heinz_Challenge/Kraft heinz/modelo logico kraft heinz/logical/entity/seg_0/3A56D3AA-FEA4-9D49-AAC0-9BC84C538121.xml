@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A56D3AA-FEA4-9D49-AAC0-9BC84C538121" name="T_SMCEA_VALIDA_METAS">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:42:05 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_fabrica" id="D16AE5AD-A49D-6E21-B741-0EAC61F24923">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:52:26 UTC</createdTime>
+<generatorID>73992E1E-8317-379C-B062-A4697D82B10B</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<referedAttribute>2A1A018F-5921-0082-6351-DDED25A75F5C</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_15%_menos_em_todas_fabricas" id="8455D3B9-C736-D39E-9535-2AB001B82C8A">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:03:15 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_energia_consumida_igual_ou_superior_51%" id="2CD96E80-6288-9168-869D-1C938938E55F">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:03:33 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_20%redc_consumo_total_agua" id="09F227E1-7089-D005-8603-A7EEEA8FB96B">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:03:42 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="08F7FC0A-4C45-C9FE-6CD3-E5955B6584BA" name="T_SMCEA_VALIDA_METAS PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:52:26 UTC</createdTime>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D16AE5AD-A49D-6E21-B741-0EAC61F24923</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

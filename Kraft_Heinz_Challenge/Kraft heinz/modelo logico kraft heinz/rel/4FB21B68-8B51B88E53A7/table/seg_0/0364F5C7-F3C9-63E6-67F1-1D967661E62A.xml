@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0364F5C7-F3C9-63E6-67F1-1D967661E62A" name="T_SMCEA_VALIDA_METAS">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>3A56D3AA-FEA4-9D49-AAC0-9BC84C538121</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_SMCEA_FABRICA_id_fabrica" id="E126C2AD-E781-0064-0898-101E9FE096DE">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>D16AE5AD-A49D-6E21-B741-0EAC61F24923</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7118656A-DDC2-DF85-FD50-022148311E69" referredColumn="3165D0C2-C099-A19C-C54F-BE4237CD6C29"/>
+</associations>
+</Column>
+<Column name="st_15%_menos_em_todas_fabricas" id="82F65134-A4AF-FFC8-6C74-414AB8112200">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>8455D3B9-C736-D39E-9535-2AB001B82C8A</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_energia_consumida_igual_ou_superior_51%" id="4B24F16A-8B36-55B7-C052-19D5F95BDEBD">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>2CD96E80-6288-9168-869D-1C938938E55F</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_20%redc_consumo_total_agua" id="14D2CC33-E85C-D058-E73D-3399716BD9BD">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>09F227E1-7089-D005-8603-A7EEEA8FB96B</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89A7EC98-F759-4AE1-D40C-1E7A7818D0BD" name="T_SMCEA_VALIDA_METAS_PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>08F7FC0A-4C45-C9FE-6CD3-E5955B6584BA</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E126C2AD-E781-0064-0898-101E9FE096DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0222DD46-BF6C-D190-6961-760CCD5E489C" name="T_SMCEA_VALIDA_METAS_T_SMCEA_FABRICA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>73992E1E-8317-379C-B062-A4697D82B10B</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E126C2AD-E781-0064-0898-101E9FE096DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

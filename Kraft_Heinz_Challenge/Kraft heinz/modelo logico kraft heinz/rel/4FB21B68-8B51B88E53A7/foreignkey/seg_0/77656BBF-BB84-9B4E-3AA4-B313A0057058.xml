@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="77656BBF-BB84-9B4E-3AA4-B313A0057058" containerWithKeyObject="04EBDB49-89CE-93B4-8386-E477855D0AC3" localFKIndex="A7B64B4F-D658-738B-6915-6A26D0716200" name="T_SMCEA_MAQUINAS_T_SMCEA_FABRICA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>F22FEDF9-2292-AFBB-A227-94F94DE43212</generatorID>
+<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
+<referredTableLongName>T_SMCEA_FABRICA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4F7666DF-D407-E889-D75A-DB5982416A08</referredTableID>
+<keyObject>A8AE7607-AC5F-1D6F-0014-D9D03BFF9367</keyObject>
+<referredKeyID>A8AE7607-AC5F-1D6F-0014-D9D03BFF9367</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_fabrica</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
