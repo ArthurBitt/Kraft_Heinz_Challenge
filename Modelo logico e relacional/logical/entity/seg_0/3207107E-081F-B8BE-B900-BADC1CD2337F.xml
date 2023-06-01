@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3207107E-081F-B8BE-B900-BADC1CD2337F" name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:39:28 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_resultado" id="937513CD-98E3-E109-0101-C7123D310056">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:48:27 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_energia_renvovavel" id="9B11C1B1-570D-C792-23EB-37D12A0302C4">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:50:27 UTC</createdTime>
+<generatorID>017AB0BA-5E80-2CB8-2F9F-47638BCBEDFD</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<referedAttribute>7FF441DD-4116-CA46-24BC-46F7F216DCC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_fabrica" id="23DFCCE7-5B99-E6D9-C95B-9F9DF2A6EA3D">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:51:28 UTC</createdTime>
+<generatorID>5FF1F204-E4F9-3383-3F47-859354BD803C</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<referedAttribute>2A1A018F-5921-0082-6351-DDED25A75F5C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA87DFC8-427C-A0BF-C0C9-9D67D2F5A5E3" name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:48:44 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>937513CD-98E3-E109-0101-C7123D310056</attributeRef>
+<attributeRef>9B11C1B1-570D-C792-23EB-37D12A0302C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

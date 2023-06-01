@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6EEB11D7-BEF7-61EA-D810-B03A7100D7D1" name="T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:40:54 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_energia_renvovavel" id="3BEAA327-A44E-BBD2-6A86-82FEC759F951">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:46:18 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_energias" id="1E56C2DE-BC61-0552-2B02-39AB795A18FA">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:12:43 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="207D706F-FCB4-E90E-7196-B6B39C31AD94" name="T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:46:31 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3BEAA327-A44E-BBD2-6A86-82FEC759F951</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

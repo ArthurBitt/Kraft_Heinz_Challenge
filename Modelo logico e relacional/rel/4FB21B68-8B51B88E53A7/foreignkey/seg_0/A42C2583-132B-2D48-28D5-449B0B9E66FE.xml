@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A42C2583-132B-2D48-28D5-449B0B9E66FE" containerWithKeyObject="4F7666DF-D407-E889-D75A-DB5982416A08" localFKIndex="2B8F4C67-E3F0-79FA-E1DE-7C5CAAEA698F" name="T_SMCEA_FABRICA_T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>5FF1F204-E4F9-3383-3F47-859354BD803C</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<referredTableLongName>T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3F0D40E3-3C37-0FC2-EB60-196571EC8882</referredTableID>
+<keyObject>AC520694-ABA1-92E3-C77D-450D6796CA6E</keyObject>
+<referredKeyID>AC520694-ABA1-92E3-C77D-450D6796CA6E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_resultado,T_SMCEA_CONVERTE_T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS_id_energia_renvovavel</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

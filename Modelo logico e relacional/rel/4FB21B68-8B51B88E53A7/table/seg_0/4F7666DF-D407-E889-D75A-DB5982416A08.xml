@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F7666DF-D407-E889-D75A-DB5982416A08" name="T_SMCEA_FABRICA">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>4B60D781-9D5A-FAD5-5635-69C884CF3BAA</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_fabrica" id="3165D0C2-C099-A19C-C54F-BE4237CD6C29">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>2A1A018F-5921-0082-6351-DDED25A75F5C</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_id_resultado" id="180F5D28-91A0-8421-780E-EEA1EAE3B0AE">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>10A1B53E-25D6-EF10-FC54-402F7CEE177D</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A42C2583-132B-2D48-28D5-449B0B9E66FE" referredColumn="3E0D0C38-8D69-ED54-6CD3-428F06255B2A"/>
+</associations>
+</Column>
+<Column name="T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_CONVERTE_T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS_id_energia_renvovavel" id="7BCD31B3-E9AD-6D78-AADD-F76FA869F905">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>5CDFA84F-8120-7214-4CEA-E1C91FCD576E</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A42C2583-132B-2D48-28D5-449B0B9E66FE" referredColumn="AB6119C1-A059-2AAC-5601-C92362073164"/>
+</associations>
+</Column>
+<Column name="T_SMCEA_CONSUMO_ENERGIA_ELETRICA_T_SMCEA_CONSUMO_ENERGIA_ELETRICA_ID" id="45FFD74A-B2AC-5F36-2127-BD99CB8EE0DD">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F33C6C54-0F3A-8B25-23C9-1A2BAAB23A86" referredColumn="4D8A49F3-6254-52D9-40DE-6A4E324E5EE9"/>
+</associations>
+</Column>
+<Column name="T_SMCEA_CONSUMO_AGUA_T_SMCEA_CONSUMO_AGUA_ID" id="0AA8E7DF-0BA5-866D-C4FE-97BBDC866F0C">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2578EBF4-9013-FACA-F449-774C4783C49A" referredColumn="27025BD5-9848-8F73-7344-5ACDEFD0B46D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8AE7607-AC5F-1D6F-0014-D9D03BFF9367" name="T_SMCEA_FABRICA_PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>9F4C2325-C94B-A18E-C3D9-F011985126F5</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3165D0C2-C099-A19C-C54F-BE4237CD6C29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56DB0542-8DD9-7EF6-CE76-0CDA4268DDD5" name="T_SMCEA_FABRICA__IDX">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ECCCD3B6-C9A5-7A79-BDD7-7EED9E6EC3FF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="45FFD74A-B2AC-5F36-2127-BD99CB8EE0DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7ADE88DD-90CF-9079-4169-F84089C8F4FF" name="T_SMCEA_FABRICA__IDXv1">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9B8E71A2-ECE9-D81B-0DA3-EB36C0158953</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0AA8E7DF-0BA5-866D-C4FE-97BBDC866F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36ACCF40-FF1A-C6B6-6A71-30BFEAED6D82" name="T_SMCEA_FABRICA__IDXv2">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5FF1F204-E4F9-3383-3F47-859354BD803C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="180F5D28-91A0-8421-780E-EEA1EAE3B0AE"/>
+<colUsage columnID="7BCD31B3-E9AD-6D78-AADD-F76FA869F905"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="113F654D-6EC3-CBB6-19B1-FB24988DDD5D" name="T_SMCEA_FABRICA_T_SMCEA_CONSUMO_ENERGIA_ELETRICA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>ECCCD3B6-C9A5-7A79-BDD7-7EED9E6EC3FF</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45FFD74A-B2AC-5F36-2127-BD99CB8EE0DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D6ADA74-90B0-99D4-7A24-8F7A90A9EC95" name="T_SMCEA_FABRICA_T_SMCEA_CONSUMO_AGUA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>9B8E71A2-ECE9-D81B-0DA3-EB36C0158953</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AA8E7DF-0BA5-866D-C4FE-97BBDC866F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B8F4C67-E3F0-79FA-E1DE-7C5CAAEA698F" name="T_SMCEA_FABRICA_T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>5FF1F204-E4F9-3383-3F47-859354BD803C</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="180F5D28-91A0-8421-780E-EEA1EAE3B0AE"/>
+<colUsage columnID="7BCD31B3-E9AD-6D78-AADD-F76FA869F905"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

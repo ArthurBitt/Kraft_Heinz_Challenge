@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85CC2E5B-12D9-F07E-EFD9-2E0FE7460CFA" name="T_SMCEA_CONVERTE">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:40:37 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_conversao" id="C9BF26D9-BDEF-9157-D283-19313BC9840D">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:47:10 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_energia_renvovavel" id="7FF441DD-4116-CA46-24BC-46F7F216DCC3">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:48:52 UTC</createdTime>
+<generatorID>C43D4D07-9CBF-8313-BB98-F30CA402DFE1</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<referedAttribute>3BEAA327-A44E-BBD2-6A86-82FEC759F951</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_energia_nao_renovavel" id="62BAC1A8-B90F-7CE0-E2D2-F4B7DF88865B">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:50:01 UTC</createdTime>
+<generatorID>6CF318EA-538A-B9D5-1D0F-7DDB2B85AD29</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<referedAttribute>DC929ACB-DA06-4B79-A96C-20F52331DB09</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A2DD714A-EE3B-C52A-24DE-BBEDD439E600" name="T_SMCEA_CONVERTE PK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 19:47:16 UTC</createdTime>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<engineerTo>
+<item key="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7FF441DD-4116-CA46-24BC-46F7F216DCC3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

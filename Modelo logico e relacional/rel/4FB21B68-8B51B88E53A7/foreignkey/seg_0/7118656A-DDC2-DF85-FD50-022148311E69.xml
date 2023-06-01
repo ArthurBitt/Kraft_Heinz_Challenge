@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7118656A-DDC2-DF85-FD50-022148311E69" containerWithKeyObject="0364F5C7-F3C9-63E6-67F1-1D967661E62A" localFKIndex="0222DD46-BF6C-D190-6961-760CCD5E489C" name="T_SMCEA_VALIDA_METAS_T_SMCEA_FABRICA_FK">
+<createdBy>Coffee</createdBy>
+<createdTime>2023-05-25 20:17:34 UTC</createdTime>
+<generatorID>73992E1E-8317-379C-B062-A4697D82B10B</generatorID>
+<ownerDesignName>Modelo logico e relacional</ownerDesignName>
+<referredTableLongName>T_SMCEA_FABRICA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4F7666DF-D407-E889-D75A-DB5982416A08</referredTableID>
+<keyObject>A8AE7607-AC5F-1D6F-0014-D9D03BFF9367</keyObject>
+<referredKeyID>A8AE7607-AC5F-1D6F-0014-D9D03BFF9367</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_fabrica</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
