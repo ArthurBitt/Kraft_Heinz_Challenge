@@ -1,16 +1,15 @@
 package br.com.SMCEA.Calculos;
 
-import br.com.SMCEA.Fabrica.Fabrica;
-
-public class TipoEnergiasRenov implements  Converter,CalculadoraPercentuaUsado {
+public class TipoEnergiasNaoRenov  implements Converter, CalculadoraPercentuaUsado {
     private String nmEnergia;
     private int idEnergia;
     private double gasto;
     private double multiplicador;
-    private static double resultadoRenov;
+    private static double resultadoNaoRenov;
 
-//construtor
-    public TipoEnergiasRenov(String nmEnergia, double gasto, double multiplicador) {
+    //construtor
+    public TipoEnergiasNaoRenov(String nmEnergia, double gasto, double multiplicador) {
+        super();
         this.nmEnergia = nmEnergia;
         this.gasto = gasto;
         this.multiplicador = multiplicador;
@@ -22,16 +21,16 @@ public class TipoEnergiasRenov implements  Converter,CalculadoraPercentuaUsado {
         System.out.println(multiplicador);
     }
 
-    //getter
+    // getter
     public double getResultado() {
-        return resultadoRenov;
+        return resultadoNaoRenov;
     }
 
     @Override
-    public double convertEnergiaRenovEmEletricidade() {
-        this.resultadoRenov = this.gasto * this.multiplicador;
-        return this.resultadoRenov;
+    public double convertEnergiaNaoRenovEmEletricidade() {
+        this.resultadoNaoRenov = this.gasto * this.multiplicador;
+        return this.resultadoNaoRenov;
     }
 
 
-    }
+}

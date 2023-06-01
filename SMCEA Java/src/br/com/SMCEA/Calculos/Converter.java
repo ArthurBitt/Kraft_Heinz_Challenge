@@ -2,19 +2,19 @@ package br.com.SMCEA.Calculos;
 
 public interface Converter {
 
-    int idConversão = 0;
+    double idConversão = 0;
+    double consumoEnergiaRenov = 0;
+    double consumoEnergiaNaoRenov = 0;
+    double multiplicador = 0;
 
     public default double convertEnergiaRenovEmEletricidade(){
 
-        return 0;
+        return consumoEnergiaRenov * multiplicador;
     }
+    public default double convertEnergiaNaoRenovEmEletricidade(){
 
-    public default int getIdConversão() {
-
-        return idConversão;
+        return consumoEnergiaNaoRenov * multiplicador;
     }
-
-
 }
 
 
