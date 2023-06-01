@@ -1,4 +1,4 @@
 package br.com.SMCEA.Modulos;
 
-public class ConsumoTotalAgua {
+public class TesteFabrica {
 }

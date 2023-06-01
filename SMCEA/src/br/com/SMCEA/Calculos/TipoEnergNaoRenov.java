@@ -1,8 +1,8 @@
 package br.com.SMCEA.Calculos;
 
-import br.com.SMCEA.Calculos.Converte;
+import br.com.SMCEA.Fabrica.ConsumoEletricidade;
 
-public class TipoEnergNaoRenov extends Converte {
+public class TipoEnergNaoRenov implements Converter, ConsumoEletricidade {
     private String nmEnergia;
     private int idEnergia;
     private double gasto;
@@ -14,4 +14,18 @@ public class TipoEnergNaoRenov extends Converte {
         return conversao;
     }
 
+    @Override
+    public int getIdConversão() {
+        return Converter.super.getIdConversão();
+    }
+
+    @Override
+    public double setValorConsumoEletricidade(double valorEletricidade) {
+        return 0;
+    }
+
+    @Override
+    public double getConsumoTotalEletricidade() {
+        return ConsumoEletricidade.super.getConsumoTotalEletricidade();
+    }
 }
