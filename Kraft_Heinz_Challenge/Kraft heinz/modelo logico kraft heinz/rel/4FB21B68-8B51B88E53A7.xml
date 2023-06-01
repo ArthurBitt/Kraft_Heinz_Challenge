@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="4FB21B68-1E0A-2B97-0951-8B51B88E53A7" mainViewID="AAA571A4-66EE-7158-AE92-2FB429715F89">
-<createdBy>Coffee</createdBy>
-<createdTime>2023-05-25 18:49:14 UTC</createdTime>
-<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
-</relationalModel>

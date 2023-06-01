@@ -1,5 +1,5 @@
 -- Gerado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
---   em:        2023-05-25 17:19:59 BRT
+--   em:        2023-06-01 18:27:01 BRT
 --   site:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -106,18 +106,6 @@ CREATE UNIQUE INDEX t_smcea_fabrica__idxv2 ON
 
 ALTER TABLE t_smcea_fabrica ADD CONSTRAINT t_smcea_fabrica_pk PRIMARY KEY ( id_fabrica );
 
-CREATE TABLE t_smcea_maquinas (
-    id_maquina                 INTEGER NOT NULL,
-    t_smcea_fabrica_id_fabrica INTEGER NOT NULL
-);
-
-CREATE UNIQUE INDEX t_smcea_maquinas__idx ON
-    t_smcea_maquinas (
-        t_smcea_fabrica_id_fabrica
-    ASC );
-
-ALTER TABLE t_smcea_maquinas ADD CONSTRAINT t_smcea_maquinas_pk PRIMARY KEY ( id_maquina );
-
 --  ERROR: Table name length exceeds maximum allowed length(30) 
 CREATE TABLE t_smcea_tipo_energias_renovaveis (
     id_energia_renvovavel INTEGER NOT NULL,
@@ -137,18 +125,6 @@ CREATE TABLE t_smcea_tipos_energia_nao_renovaveis (
 --  ERROR: PK name length exceeds maximum allowed length(30) 
 ALTER TABLE t_smcea_tipos_energia_nao_renovaveis ADD CONSTRAINT t_smcea_tipos_energia_nao_renovaveis_pk PRIMARY KEY ( id_energia_nao_renovavel
 );
-
-CREATE TABLE t_smcea_tipos_produtos (
-    id_tipo_produto             INTEGER NOT NULL,
-    t_smcea_maquinas_id_maquina INTEGER NOT NULL
-);
-
-CREATE UNIQUE INDEX t_smcea_tipos_produtos__idx ON
-    t_smcea_tipos_produtos (
-        t_smcea_maquinas_id_maquina
-    ASC );
-
-ALTER TABLE t_smcea_tipos_produtos ADD CONSTRAINT t_smcea_tipos_produtos_pk PRIMARY KEY ( id_tipo_produto );
 
 CREATE TABLE t_smcea_valida_metas (
     t_smcea_fabrica_id_fabrica                   INTEGER NOT NULL,
@@ -215,16 +191,6 @@ ALTER TABLE t_smcea_fabrica
         REFERENCES t_smcea_consumo_energia_eletrica ( t_smcea_consumo_energia_eletrica_id );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_maquinas
-    ADD CONSTRAINT t_smcea_maquinas_t_smcea_fabrica_fk FOREIGN KEY ( t_smcea_fabrica_id_fabrica )
-        REFERENCES t_smcea_fabrica ( id_fabrica );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_tipos_produtos
-    ADD CONSTRAINT t_smcea_tipos_produtos_t_smcea_maquinas_fk FOREIGN KEY ( t_smcea_maquinas_id_maquina )
-        REFERENCES t_smcea_maquinas ( id_maquina );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE t_smcea_valida_metas
     ADD CONSTRAINT t_smcea_valida_metas_t_smcea_fabrica_fk FOREIGN KEY ( t_smcea_fabrica_id_fabrica )
         REFERENCES t_smcea_fabrica ( id_fabrica );
@@ -255,9 +221,9 @@ END;
 
 -- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            10
--- CREATE INDEX                             8
--- ALTER TABLE                             22
+-- CREATE TABLE                             8
+-- CREATE INDEX                             6
+-- ALTER TABLE                             18
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
@@ -293,5 +259,5 @@ END;
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                  31
+-- ERRORS                                  29
 -- WARNINGS                                 0

@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="29F3C262-602D-4316-44BE-2A98D6A01937">
-<createdBy>Coffee</createdBy>
-<createdTime>2023-05-25 18:49:13 UTC</createdTime>
-<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</BusinessInfoDesign>

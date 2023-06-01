@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="74746047-D3F2-EFC6-0559-2D3377AB513E" mainViewID="D3AC74FB-FC86-9B5B-6C48-9EC27815CEDA">
-<createdBy>Coffee</createdBy>
-<createdTime>2023-05-25 18:49:13 UTC</createdTime>
-<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>

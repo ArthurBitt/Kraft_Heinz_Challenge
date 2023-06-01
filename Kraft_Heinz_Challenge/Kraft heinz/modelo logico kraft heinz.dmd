@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo logico kraft heinz" id="138E9900-7541-AD99-D89B-8EACA6408B38" version="3.5">
-<createdBy>Coffee</createdBy>
-<createdTime>2023-05-25 18:49:13 UTC</createdTime>
-<ownerDesignName>modelo logico kraft heinz</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>138E9900-7541-AD99-D89B-8EACA6408B38</designId>
-</OSDM_Design>
