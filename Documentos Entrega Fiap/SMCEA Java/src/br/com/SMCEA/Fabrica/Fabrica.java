@@ -48,7 +48,7 @@ public class Fabrica implements ConsumoEletricidade, ConsumoAgua {
 
     @Override
     public double getConsumoTotalEnergRenov() {
-        return ConsumoEletricidade.super.getConsumoTotalEnergRenov();
+        return consumoTotalEletricidade;
     }
 }
 
