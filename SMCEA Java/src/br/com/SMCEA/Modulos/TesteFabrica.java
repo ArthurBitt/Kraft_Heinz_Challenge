@@ -10,5 +10,6 @@ public class TesteFabrica {
         fab1.setValorConsumoEletricidade(200);
 
         fab1.exibeFichaTecnica();
+        System.out.println(fab1.getConsumoTotalEletricidade());
     }
 }

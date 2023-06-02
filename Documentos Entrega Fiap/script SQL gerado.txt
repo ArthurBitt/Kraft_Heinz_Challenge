@@ -1,3 +1,4 @@
+
 -- Gerado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
 --   em:        2023-06-01 18:27:01 BRT
 --   site:      Oracle Database 11g
@@ -10,211 +11,211 @@
 -- predefined type, no DDL - XMLTYPE
 
 --  ERROR: Table name length exceeds maximum allowed length(30) 
-CREATE TABLE "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA" (
-    id_resultado                                                            INTEGER NOT NULL, 
+Create Table "T_SMCEA_CALCULADORA_TIPO_ENERG_CONSUMIDA" (
+    Id_Resultado                                                            Integer Not Null, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    t_smcea_converte_t_smcea_tipo_energias_renovaveis_id_energia_renvovavel INTEGER NOT NULL,
-    t_smcea_fabrica_id_fabrica                                              INTEGER NOT NULL
+    T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel Integer Not Null,
+    T_Smcea_Fabrica_Id_Fabrica                                              Integer Not Null
 );
 
 --  ERROR: Index name length exceeds maximum allowed length(30) 
-CREATE UNIQUE INDEX "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA__IDX" ON
-    "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA" (
-        t_smcea_fabrica_id_fabrica
-    ASC );
+Create Unique Index "T_SMCEA_CALCULADORA_TIPO_ENERG_CONSUMIDA__Idx" On
+    "T_Smcea_Calculadora_%_Tipo_Energ_Consumida" (
+        T_Smcea_Fabrica_Id_Fabrica
+    Asc );
 
 --  ERROR: PK name length exceeds maximum allowed length(30) 
-ALTER TABLE "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA" ADD CONSTRAINT "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_PK" PRIMARY KEY (
-id_resultado,
-                                                                                                                                t_smcea_converte_t_smcea_tipo_energias_renovaveis_id_energia_renvovavel
+Alter Table "T_SMCEA_CALCULADORA_TIPO_ENERG_CONSUMIDA" Add Constraint "T_SMCEA_CALCULADORA_TIPO_ENERG_CONSUMIDA_Pk" Primary Key (
+Id_Resultado,
+                                                                                                                                T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel
                                                                                                                                 );
 
-CREATE TABLE t_smcea_consumo_agua (
-    t_smcea_fabrica_id_fabrica INTEGER NOT NULL,
-    vl_agua_gasta              NUMBER,
-    t_smcea_consumo_agua_id    NUMBER NOT NULL
+Create Table T_Smcea_Consumo_Agua (
+    T_Smcea_Fabrica_Id_Fabrica Integer Not Null,
+    Vl_Agua_Gasta              Number,
+    T_Smcea_Consumo_Agua_Id    Number Not Null
 );
 
-CREATE UNIQUE INDEX t_smcea_consumo_agua__idx ON
-    t_smcea_consumo_agua (
-        t_smcea_fabrica_id_fabrica
-    ASC );
+Create Unique Index T_Smcea_Consumo_Agua__Idx On
+    T_Smcea_Consumo_Agua (
+        T_Smcea_Fabrica_Id_Fabrica
+    Asc );
 
-ALTER TABLE t_smcea_consumo_agua ADD CONSTRAINT t_smcea_consumo_agua_pk PRIMARY KEY ( t_smcea_consumo_agua_id );
+Alter Table T_Smcea_Consumo_Agua Add Constraint T_Smcea_Consumo_Agua_Pk Primary Key ( T_Smcea_Consumo_Agua_Id );
 
 --  ERROR: Table name length exceeds maximum allowed length(30) 
-CREATE TABLE t_smcea_consumo_energia_eletrica (
-    t_smcea_fabrica_id_fabrica          INTEGER NOT NULL,
-    "vl_Kw/h_gasto"                     NUMBER, 
+Create Table T_Smcea_Consumo_Energia_Eletrica (
+    T_Smcea_Fabrica_Id_Fabrica          Integer Not Null,
+    "Vl_Kw/h_Gasto"                     Number, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    t_smcea_consumo_energia_eletrica_id NUMBER NOT NULL
+    T_Smcea_Consumo_Energia_Eletrica_Id Number Not Null
 );
 
 --  ERROR: Index name length exceeds maximum allowed length(30) 
-CREATE UNIQUE INDEX t_smcea_consumo_energia_eletrica__idx ON
-    t_smcea_consumo_energia_eletrica (
-        t_smcea_fabrica_id_fabrica
-    ASC );
+Create Unique Index T_Smcea_Consumo_Energia_Eletrica__Idx On
+    T_Smcea_Consumo_Energia_Eletrica (
+        T_Smcea_Fabrica_Id_Fabrica
+    Asc );
 
 --  ERROR: PK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_consumo_energia_eletrica ADD CONSTRAINT t_smcea_consumo_energia_eletrica_pk PRIMARY KEY ( t_smcea_consumo_energia_eletrica_id
+Alter Table T_Smcea_Consumo_Energia_Eletrica Add Constraint T_Smcea_Consumo_Energia_Eletrica_Pk Primary Key ( T_Smcea_Consumo_Energia_Eletrica_Id
 );
 
-CREATE TABLE t_smcea_converte (
-    id_conversao                                                  INTEGER NOT NULL, 
+Create Table T_Smcea_Converte (
+    Id_Conversao                                                  Integer Not Null, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    t_smcea_tipo_energias_renovaveis_id_energia_renvovavel        INTEGER NOT NULL, 
+    T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel        Integer Not Null, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    t_smcea_tipos_energia_nao_renovaveis_id_energia_nao_renovavel INTEGER NOT NULL
+    T_Smcea_Tipos_Energia_Nao_Renovaveis_Id_Energia_Nao_Renovavel Integer Not Null
 );
 
-ALTER TABLE t_smcea_converte ADD CONSTRAINT t_smcea_converte_pk PRIMARY KEY ( t_smcea_tipo_energias_renovaveis_id_energia_renvovavel )
+Alter Table T_Smcea_Converte Add Constraint T_Smcea_Converte_Pk Primary Key ( T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel )
 ;
 
-CREATE TABLE t_smcea_fabrica (
-    id_fabrica                                                                                                           INTEGER NOT NULL
+Create Table T_Smcea_Fabrica (
+    Id_Fabrica                                                                                                           Integer Not Null
     , 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_id_resultado"                                                            INTEGER NOT NULL
+    "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_Id_Resultado"                                                            Integer Not Null
     , 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_CONVERTE_T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS_id_energia_renvovavel" INTEGER NOT NULL
+    "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel" Integer Not Null
     , 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    t_smcea_consumo_energia_eletrica_t_smcea_consumo_energia_eletrica_id                                                 NUMBER NOT NULL
+    T_Smcea_Consumo_Energia_Eletrica_T_Smcea_Consumo_Energia_Eletrica_Id                                                 Number Not Null
     , 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    t_smcea_consumo_agua_t_smcea_consumo_agua_id                                                                         NUMBER NOT NULL
+    T_Smcea_Consumo_Agua_T_Smcea_Consumo_Agua_Id                                                                         Number Not Null
 );
 
-CREATE UNIQUE INDEX t_smcea_fabrica__idx ON
-    t_smcea_fabrica (
-        t_smcea_consumo_energia_eletrica_t_smcea_consumo_energia_eletrica_id
-    ASC );
+Create Unique Index T_Smcea_Fabrica__Idx On
+    T_Smcea_Fabrica (
+        T_Smcea_Consumo_Energia_Eletrica_T_Smcea_Consumo_Energia_Eletrica_Id
+    Asc );
 
-CREATE UNIQUE INDEX t_smcea_fabrica__idxv1 ON
-    t_smcea_fabrica (
-        t_smcea_consumo_agua_t_smcea_consumo_agua_id
-    ASC );
+Create Unique Index T_Smcea_Fabrica__Idxv1 On
+    T_Smcea_Fabrica (
+        T_Smcea_Consumo_Agua_T_Smcea_Consumo_Agua_Id
+    Asc );
 
-CREATE UNIQUE INDEX t_smcea_fabrica__idxv2 ON
-    t_smcea_fabrica (
-        "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_id_resultado"
-    ASC,
-        "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_CONVERTE_T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS_id_energia_renvovavel"
-    ASC );
+Create Unique Index T_Smcea_Fabrica__Idxv2 On
+    T_Smcea_Fabrica (
+        "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_Id_Resultado"
+    Asc,
+        "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel"
+    Asc );
 
-ALTER TABLE t_smcea_fabrica ADD CONSTRAINT t_smcea_fabrica_pk PRIMARY KEY ( id_fabrica );
+Alter Table T_Smcea_Fabrica Add Constraint T_Smcea_Fabrica_Pk Primary Key ( Id_Fabrica );
 
 --  ERROR: Table name length exceeds maximum allowed length(30) 
-CREATE TABLE t_smcea_tipo_energias_renovaveis (
-    id_energia_renvovavel INTEGER NOT NULL,
-    nm_energias           VARCHAR2(30) NOT NULL
+Create Table T_Smcea_Tipo_Energias_Renovaveis (
+    Id_Energia_Renvovavel Integer Not Null,
+    Nm_Energias           Varchar2(30) Not Null
 );
 
 --  ERROR: PK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_tipo_energias_renovaveis ADD CONSTRAINT t_smcea_tipo_energias_renovaveis_pk PRIMARY KEY ( id_energia_renvovavel )
+Alter Table T_Smcea_Tipo_Energias_Renovaveis Add Constraint T_Smcea_Tipo_Energias_Renovaveis_Pk Primary Key ( Id_Energia_Renvovavel )
 ;
 
 --  ERROR: Table name length exceeds maximum allowed length(30) 
-CREATE TABLE t_smcea_tipos_energia_nao_renovaveis (
-    id_energia_nao_renovavel INTEGER NOT NULL,
-    nm_energias              VARCHAR2(30) NOT NULL
+Create Table T_Smcea_Tipos_Energia_Nao_Renovaveis (
+    Id_Energia_Nao_Renovavel Integer Not Null,
+    Nm_Energias              Varchar2(30) Not Null
 );
 
 --  ERROR: PK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_tipos_energia_nao_renovaveis ADD CONSTRAINT t_smcea_tipos_energia_nao_renovaveis_pk PRIMARY KEY ( id_energia_nao_renovavel
+Alter Table T_Smcea_Tipos_Energia_Nao_Renovaveis Add Constraint T_Smcea_Tipos_Energia_Nao_Renovaveis_Pk Primary Key ( Id_Energia_Nao_Renovavel
 );
 
-CREATE TABLE t_smcea_valida_metas (
-    t_smcea_fabrica_id_fabrica                   INTEGER NOT NULL,
-    "st_15%_menos_em_todas_fabricas"             CHAR(1), 
+Create Table T_Smcea_Valida_Metas (
+    T_Smcea_Fabrica_Id_Fabrica                   Integer Not Null,
+    "St_15%_Menos_Em_Todas_Fabricas"             Char(1), 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    "st_energia_consumida_igual_ou_superior_51%" CHAR(1),
-    "st_20%redc_consumo_total_agua"              CHAR(1)
+    "St_Energia_Consumida_Igual_Ou_Superior_51%" Char(1),
+    "St_20%redc_Consumo_Total_Agua"              Char(1)
 );
 
-ALTER TABLE t_smcea_valida_metas ADD CONSTRAINT t_smcea_valida_metas_pk PRIMARY KEY ( t_smcea_fabrica_id_fabrica );
+Alter Table T_Smcea_Valida_Metas Add Constraint T_Smcea_Valida_Metas_Pk Primary Key ( T_Smcea_Fabrica_Id_Fabrica );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA"
-    ADD CONSTRAINT "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_CONVERTE_FK" FOREIGN KEY ( t_smcea_converte_t_smcea_tipo_energias_renovaveis_id_energia_renvovavel
+Alter Table "T_Smcea_Calculadora_%_Tipo_Energ_Consumida"
+    Add Constraint "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_T_Smcea_Converte_Fk" Foreign Key ( T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel
     )
-        REFERENCES t_smcea_converte ( t_smcea_tipo_energias_renovaveis_id_energia_renvovavel );
+        References T_Smcea_Converte ( T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA"
-    ADD CONSTRAINT "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_FABRICA_FK" FOREIGN KEY ( t_smcea_fabrica_id_fabrica )
-        REFERENCES t_smcea_fabrica ( id_fabrica );
+Alter Table "T_Smcea_Calculadora_%_Tipo_Energ_Consumida"
+    Add Constraint "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_T_Smcea_Fabrica_Fk" Foreign Key ( T_Smcea_Fabrica_Id_Fabrica )
+        References T_Smcea_Fabrica ( Id_Fabrica );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_consumo_agua
-    ADD CONSTRAINT t_smcea_consumo_agua_t_smcea_fabrica_fk FOREIGN KEY ( t_smcea_fabrica_id_fabrica )
-        REFERENCES t_smcea_fabrica ( id_fabrica );
+Alter Table T_Smcea_Consumo_Agua
+    Add Constraint T_Smcea_Consumo_Agua_T_Smcea_Fabrica_Fk Foreign Key ( T_Smcea_Fabrica_Id_Fabrica )
+        References T_Smcea_Fabrica ( Id_Fabrica );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_consumo_energia_eletrica
-    ADD CONSTRAINT t_smcea_consumo_energia_eletrica_t_smcea_fabrica_fk FOREIGN KEY ( t_smcea_fabrica_id_fabrica )
-        REFERENCES t_smcea_fabrica ( id_fabrica );
+Alter Table T_Smcea_Consumo_Energia_Eletrica
+    Add Constraint T_Smcea_Consumo_Energia_Eletrica_T_Smcea_Fabrica_Fk Foreign Key ( T_Smcea_Fabrica_Id_Fabrica )
+        References T_Smcea_Fabrica ( Id_Fabrica );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_converte
-    ADD CONSTRAINT t_smcea_converte_t_smcea_tipo_energias_renovaveis_fk FOREIGN KEY ( t_smcea_tipo_energias_renovaveis_id_energia_renvovavel
+Alter Table T_Smcea_Converte
+    Add Constraint T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Fk Foreign Key ( T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel
     )
-        REFERENCES t_smcea_tipo_energias_renovaveis ( id_energia_renvovavel );
+        References T_Smcea_Tipo_Energias_Renovaveis ( Id_Energia_Renvovavel );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_converte
-    ADD CONSTRAINT t_smcea_converte_t_smcea_tipos_energia_nao_renovaveis_fk FOREIGN KEY ( t_smcea_tipos_energia_nao_renovaveis_id_energia_nao_renovavel
+Alter Table T_Smcea_Converte
+    Add Constraint T_Smcea_Converte_T_Smcea_Tipos_Energia_Nao_Renovaveis_Fk Foreign Key ( T_Smcea_Tipos_Energia_Nao_Renovaveis_Id_Energia_Nao_Renovavel
     )
-        REFERENCES t_smcea_tipos_energia_nao_renovaveis ( id_energia_nao_renovavel );
+        References T_Smcea_Tipos_Energia_Nao_Renovaveis ( Id_Energia_Nao_Renovavel );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_fabrica
-    ADD CONSTRAINT "T_SMCEA_FABRICA_T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_FK" FOREIGN KEY ( "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_id_resultado"
+Alter Table T_Smcea_Fabrica
+    Add Constraint "T_Smcea_Fabrica_T_Smcea_Calculadora_%_Tipo_Energ_Consumida_Fk" Foreign Key ( "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_Id_Resultado"
     ,
-                                                                                                 "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA_T_SMCEA_CONVERTE_T_SMCEA_TIPO_ENERGIAS_RENOVAVEIS_id_energia_renvovavel"
+                                                                                                 "T_Smcea_Calculadora_%_Tipo_Energ_Consumida_T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel"
                                                                                                  )
-        REFERENCES "T_SMCEA_CALCULADORA_%_TIPO_ENERG_CONSUMIDA" ( id_resultado,
-                                                                  t_smcea_converte_t_smcea_tipo_energias_renovaveis_id_energia_renvovavel
+        References "T_Smcea_Calculadora_%_Tipo_Energ_Consumida" ( Id_Resultado,
+                                                                  T_Smcea_Converte_T_Smcea_Tipo_Energias_Renovaveis_Id_Energia_Renvovavel
                                                                   );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_fabrica
-    ADD CONSTRAINT t_smcea_fabrica_t_smcea_consumo_agua_fk FOREIGN KEY ( t_smcea_consumo_agua_t_smcea_consumo_agua_id )
-        REFERENCES t_smcea_consumo_agua ( t_smcea_consumo_agua_id );
+Alter Table T_Smcea_Fabrica
+    Add Constraint T_Smcea_Fabrica_T_Smcea_Consumo_Agua_Fk Foreign Key ( T_Smcea_Consumo_Agua_T_Smcea_Consumo_Agua_Id )
+        References T_Smcea_Consumo_Agua ( T_Smcea_Consumo_Agua_Id );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_fabrica
-    ADD CONSTRAINT t_smcea_fabrica_t_smcea_consumo_energia_eletrica_fk FOREIGN KEY ( t_smcea_consumo_energia_eletrica_t_smcea_consumo_energia_eletrica_id
+Alter Table T_Smcea_Fabrica
+    Add Constraint T_Smcea_Fabrica_T_Smcea_Consumo_Energia_Eletrica_Fk Foreign Key ( T_Smcea_Consumo_Energia_Eletrica_T_Smcea_Consumo_Energia_Eletrica_Id
     )
-        REFERENCES t_smcea_consumo_energia_eletrica ( t_smcea_consumo_energia_eletrica_id );
+        References T_Smcea_Consumo_Energia_Eletrica ( T_Smcea_Consumo_Energia_Eletrica_Id );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_smcea_valida_metas
-    ADD CONSTRAINT t_smcea_valida_metas_t_smcea_fabrica_fk FOREIGN KEY ( t_smcea_fabrica_id_fabrica )
-        REFERENCES t_smcea_fabrica ( id_fabrica );
+Alter Table T_Smcea_Valida_Metas
+    Add Constraint T_Smcea_Valida_Metas_T_Smcea_Fabrica_Fk Foreign Key ( T_Smcea_Fabrica_Id_Fabrica )
+        References T_Smcea_Fabrica ( Id_Fabrica );
 
-CREATE SEQUENCE t_smcea_consumo_agua_t_smcea_c START WITH 1 NOCACHE ORDER;
+Create Sequence T_Smcea_Consumo_Agua_T_Smcea_C Start With 1 Nocache Order;
 
-CREATE OR REPLACE TRIGGER t_smcea_consumo_agua_t_smcea_c BEFORE
-    INSERT ON t_smcea_consumo_agua
-    FOR EACH ROW
-    WHEN ( new.t_smcea_consumo_agua_id IS NULL )
-BEGIN
-    :new.t_smcea_consumo_agua_id := t_smcea_consumo_agua_t_smcea_c.nextval;
-END;
+Create Or Replace Trigger T_Smcea_Consumo_Agua_T_Smcea_C Before
+    Insert On T_Smcea_Consumo_Agua
+    For Each Row
+    When ( New.T_Smcea_Consumo_Agua_Id Is Null )
+Begin
+    :New.T_Smcea_Consumo_Agua_Id := T_Smcea_Consumo_Agua_T_Smcea_C.Nextval;
+End;
 /
 
-CREATE SEQUENCE t_smcea_consumo_energia_eletri START WITH 1 NOCACHE ORDER;
+Create Sequence T_Smcea_Consumo_Energia_Eletri Start With 1 Nocache Order;
 
-CREATE OR REPLACE TRIGGER t_smcea_consumo_energia_eletri BEFORE
-    INSERT ON t_smcea_consumo_energia_eletrica
-    FOR EACH ROW
-    WHEN ( new.t_smcea_consumo_energia_eletrica_id IS NULL )
-BEGIN
-    :new.t_smcea_consumo_energia_eletrica_id := t_smcea_consumo_energia_eletri.nextval;
-END;
+Create Or Replace Trigger T_Smcea_Consumo_Energia_Eletri Before
+    Insert On T_Smcea_Consumo_Energia_Eletrica
+    For Each Row
+    When ( New.T_Smcea_Consumo_Energia_Eletrica_Id Is Null )
+Begin
+    :New.T_Smcea_Consumo_Energia_Eletrica_Id := T_Smcea_Consumo_Energia_Eletri.Nextval;
+End;
 /
 
 
