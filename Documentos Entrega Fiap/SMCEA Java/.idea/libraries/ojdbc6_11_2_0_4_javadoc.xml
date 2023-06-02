@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ojdbc6-11.2.0.4-javadoc">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/ConnDB/ojdbc6-11.2.0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
