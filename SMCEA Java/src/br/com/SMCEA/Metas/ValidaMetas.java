@@ -3,11 +3,13 @@ package br.com.SMCEA.Metas;
 import br.com.SMCEA.Fabrica.ConsumoAgua;
 import br.com.SMCEA.Fabrica.ConsumoEletricidade;
 import br.com.SMCEA.Fabrica.Fabrica;
+import br.com.SMCEA.Calculos.TipoEnergiasRenov;
+import br.com.SMCEA.Calculos.TipoEnergiasNaoRenov;
 
 public class ValidaMetas extends Fabrica implements ConsumoEletricidade, ConsumoAgua {
     private boolean menos15PorcentTotalEnergia = true;
     private boolean menos20PorcentTotalAgua = true;
-    private boolean maiorOuIgual51PorncentUsoEnergRenov = true;
+    private boolean maiorOuIgual51PorcentUsoEnergRenov = true;
     private Fabrica idFabrica;
 
     public ValidaMetas(int idFabrica, Fabrica idFabrica1) {
@@ -15,42 +17,40 @@ public class ValidaMetas extends Fabrica implements ConsumoEletricidade, Consumo
         this.idFabrica = idFabrica1;
     }
 
-    public Boolean validaMeta1(){
+    public Boolean validaMeta1() {
+        double consumoTotalEletricidade = getValorConsumoEletricidade();
 
-        if(consumoTotalEletricidade < 15/100){
+        if (consumoTotalEletricidade < 0.15 * getResultadoEnergiasRenov() + getResultadoEnergiasNaoRenov()) {
             System.out.println("Meta não batida");
             return menos15PorcentTotalEnergia = false;
-        }else{
+        } else {
             System.out.println("Meta batida");
             return menos15PorcentTotalEnergia;
         }
+    }
 
-        }
+    public Boolean validaMeta2() {
+        double consumoTotalAgua = getValorConsumoAgua();
 
-    public Boolean validaMeta2(){
-
-        if(consumoTotalAgua < 20/100){
+        if (consumoTotalAgua < 0.20 * consumoTotalAgua) {
             System.out.println("Meta não batida");
             return menos20PorcentTotalAgua = false;
-        }else {
+        } else {
             System.out.println("Meta batida");
             return menos20PorcentTotalAgua;
         }
     }
 
-    public Boolean validaMeta3(){
-        if (getConsumoTotalEnergRenov() < 51/100*consumoTotalEletricidade){
+    public Boolean validaMeta3() {
+        double consumoTotalEletricidade = getValorConsumoEletricidade();
+        double consumoTotalEnergRenov = getConsumoTotalEnergRenov();
+
+        if (consumoTotalEnergRenov < 0.51 * consumoTotalEletricidade) {
             System.out.println("Meta não batida");
-            return maiorOuIgual51PorncentUsoEnergRenov = false;
-
-        }else{
+            return maiorOuIgual51PorcentUsoEnergRenov = false;
+        } else {
             System.out.println("Meta batida");
-            return maiorOuIgual51PorncentUsoEnergRenov;
-
+            return maiorOuIgual51PorcentUsoEnergRenov;
         }
     }
-    }
-
-
-
-
+}
